@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzair Anjum - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply a software-themed background to the entire page */
+body {
+    background-image: url('background image .jpeg'); /* Replace with your black and blue software-themed image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent header background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the image in the header */
+nav img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 700;
+    transition: color 0.3s;
+    align-content: center;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.section {
+    padding: 150px 400px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background for content */
+    margin-bottom: 20px;
+    color: #f9f9f9; /* Ensure text is readable */
+    text-align: center; /* Center the text */
+}
+
+/* Style for the projects container */
+#projects-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    animation: float 5s ease-in-out infinite; /* Apply floating animation */
+}
+
+.project-item img {
+    width: 60%; /* Adjust logo size */
+    max-width: 150px; /* Ensure logos are not too big */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.contact-details a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: #ffd700;
+}
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <img src="me.jpeg" alt="Profile Picture">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I am an Italian Software Engineering student 
+            in my final year, I have been in the U.K since 2018. I have done a Business diploma 
+            in my college which led to my work experience as a Duty manager in various businesses while persuing my degree. 
+            I have worked on
+            multiple Programing languages
+            such as: Js , HTML, CSS, Python,
+            Java, MySQL, MOngoDB, Node.js. 
+            You can click on any of the logos 
+            below to be directed to my git Hub to see these projects.</p>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>What Projects Would You Like to See?</h2>
+    <div id="projects-container">
+        <div class="project-item">
+            <a href="https://github.com/uzair460/python/tree/main/MyCode.py" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
+            </a>
+        </div>
+        <div class="project-item">
+            <a href="https://github.com/uzair460/Java" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo">
+            </a>
+        </div>
+        <div class="project-item">
+            <a href="https://github.com/uzair460/full-stack" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png?20180210215736" alt="C# Logo">
+            </a>
+        </div>
+        <div class="project-item">
+            <a href="https://github.com/uzair460/full-stack" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="HTML CSS Logo">
+            </a>
+        </div>
+
+        <div class="project-item">
+            <a href="https://github.com/uzair460/full-stack" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+            </a>
+        </div>
+        <div class="project-item">
+            <a href="https://github.com/uzair460/full-stack" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:anjumuzair46@gmail.com">anjumuzair46@gmail.com</a></p>
+        <p>Phone: +44 7442 138 042</p>
+        <div class="contact-details">
+            <a href="https://github.com/uzair460" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" style="width: 30px;"></a>
+            <a href="https://www.linkedin.com/in/uzair-anjum-4070801b4/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn Logo" style="width: 30px;"></a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Uzair Anjum. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
